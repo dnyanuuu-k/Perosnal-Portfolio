@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+@font-face {
+    font-family: Horsemen;
+    src: url(font/horsemen/Horsemen\ \(Demo\ Version\).otf);
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    background: var(--Black-Theme);
+}
+
+:root {
+    --Black-Theme: #101010;
+    --Gray-Theme: #222325;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: Horsemen;
+    background-image: linear-gradient(90deg, #2DD1E1, #F15A5A, #BE2161);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0 50px 0;
+    letter-spacing: 8px;
+
+}
+
+h2 {
+    font-size: 24px;
+    font-family: Horsemen;
+    background-image: linear-gradient(90deg, #F15A5A, #BE2161, #2DD1E1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 30px;
+    letter-spacing: 8px;
+}
+
+h3 {
+    font-size: 12px;
+    font-family: Horsemen;
+    color: greenyellow;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center
+}
+
+.space_between {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+
+/* header section  */
+
+.header {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.navbar {
+    padding: 5px 0;
+    position: static;
+    box-shadow: rgba(0, 102, 255, 0.1) 0px 10px 10px -10px;
+}
+
+.navbar .links ul {
+    list-style: none;
+}
+
+.navbar .links ul li a {
+    text-decoration: none;
+    font-size: 6px;
+    margin-left: 50px;
+    color: greenyellow;
+    font-family: Horsemen;
+    letter-spacing: 5px;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    border: 5px solid gray;
+    border-radius: 50%;
+    margin: 10px 20px 10px 0;
+
+}
+
+.intro_section {
+    margin-top: 50px;
+}
+
+.intro_section h2 {
+    font-family: 'Poppins', sans-serif;
+    padding: 20px 0 20px 50px;
+    margin: 0;
+    letter-spacing: 1px;
+    /* margin-left: 50px; */
+}
+
+.intro_section h2 span {
+    border-bottom: 1px solid #2DD1E1;
+    border-style: dashed;
+    -webkit-text-fill-color: #2DD1E1;
+}
+
+.left_content img {
+    width: 600px;
+    font-size: 40px;
+    border-radius: 40px;
+    /* border: 5px solid gray; */
+}
+
+.right_content {
+    text-align: left;
+}
+
+.right_content p {
+    padding: 20px 50px;
+    color: #e2e0e0;
+    font-size: 18px;
+    width: 400px;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.button {
+    font-family: Horsemen;
+    font-size: 22px;
+    font-size: 10px;
+    background: linear-gradient(226deg, transparent 5%, #101010 10%);
+    padding: 15px 20px 12px 20px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    box-shadow: -4px 0px 0px #ff013c;
+    outline: transparent;
+    position: relative;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    word-spacing: 5px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+
+/* my work content  */
+
+.my_work_section {
+    background-color: rgb(27, 26, 26);
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 50px;
+    margin: 50px auto;
+    padding: 30px 0;
+    box-shadow: rgba(255, 255, 255, 0.098) 0px 19px 38px, rgba(255, 255, 255, 0.084) 0px 15px 12px;
+}
+
+.all_work_content {
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.cards {
+    width: 450px;
+    color: white;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px 30px;
+    gap: 30px;
+    text-align: left;
+    background: var(--Black-Theme);
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.cards:hover {
+    box-shadow: rgba(255, 255, 255, 0.064) 0px 50px 100px -20px, rgba(255, 255, 255, 0.1) 0px 30px 60px -30px;
+
+}
+
+.cards img {
+    height: 100px;
+    border-radius: 10px;
+    border: 2px solid gray;
+}
+
+.cards h4 {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    color: #2DD1E1;
+    padding: 2px 10px;
+    background: rgb(32, 31, 31);
+    border-radius: 20px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.cards p {
+    font-size: 12px;
+    color: gray;
+}
+
+.visit_btn{
+    font-size: 8px;
+    font-weight: 700;
+    font-family: Horsemen;
+    color: rgb(255, 255, 255);
+    letter-spacing: 4px;
+    box-shadow: rgb(0, 230, 246) -2px 0px 0px;
+    position: relative;
+    user-select: none;
+    touch-action: manipulation;
+    word-spacing: 5px;
+    background: linear-gradient(226deg, transparent 5%, rgb(27, 27, 27) 5%);
+    padding: 5px 20px 5px;
+    outline: transparent;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.cards .visit_btn:hover {
+    color: #101010;
+    background: white;
+    transition: 0.3s;
+}
+
+
+/* <!-- section for profiles  --> */
+
+.profiles_section {
+    flex-direction: column;
+    background-color: rgb(27, 26, 26);
+    width: 80%;
+    text-align: center;
+    border-radius: 50%;
+    margin: 100px auto;
+    padding: 100px 0;
+    box-shadow: rgba(255, 255, 255, 0.098) 0px 19px 38px, rgba(255, 255, 255, 0.084) 0px 15px 12px;
+}
+
+.profiles i {
+    font-size: 30px;
+    margin: 50px 20px;
+    padding: 5px 20px 15px 20px;
+    border-radius: 50% 50% 10px 50%;
+    background-image: linear-gradient(90deg, #2DD1E1, #F15A5A, #BE2161);
+    transition: 0.3s;
+    -webkit-text-fill-color: white;
+    position: relative;
+    cursor: pointer;
+}
+
+.profiles i:hover {
+    /* -webkit-text-fill-color: transparent; */
+    /* -webkit-background-clip: text; */
+    bottom: 8px;
+
+}
+
+
+/* <!-- Skills section --> */
+
+.skills_bar {
+    width: 600px;
+    margin: 50px auto;
+    color: white;
+
+}
+
+.skills_bar .info {
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+.skills_bar .info p{
+    background: #2DD1E1;
+    font-size: 12px;
+    color: black;
+    padding: 3px 15px ;
+    border-radius: 25px;
+    font-weight: 600;
+}
+
+.skills_bar .bar {
+    position: relative;
+    text-align: center;
+    width: 90%;
+    margin: 20px auto;
+    height: 10px;
+    border-radius: 25px;
+    background: gray;
+}
+
+.skills_bar .bar span {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 10px;
+    border-radius: 25px;
+    color: red;
+    background-image: linear-gradient(90deg, #2DD1E1, #db568c);
+    box-shadow: rgb(45, 209, 225) 0px 5px 15px;
+}
+
+.skills_bar .bar .html {
+
+    width: 76%;
+    animation: html 4s;
+}
+
+.skills_bar .bar .css {
+    width: 82%;
+    animation: css 5s;
+}
+
+.skills_bar .bar .javascript {
+    width: 60%;
+    animation: javascript 3s;
+}
+
+.skills_bar .bar .react {
+    width: 30%;
+    animation: react 2s;
+}
+
+
+/* <!-- Contact me section  --> */
+
+.contact_info form{
+    display: grid;
+    gap: 30px;
+    width: 600px;
+    margin:30px auto;
+
+}
+.contact_info form div:first-child{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.contact_info form input,.contact_info form textarea
+{
+    border: none;
+    background: rgb(49, 49, 49);
+    color: white;
+    outline: none ;
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 15px;
+    border: 1px solid rgb(105, 105, 105);
+}
+.submit{
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    padding: 10px 20px ;
+    border-radius:10px ;
+    background: #222325;
+    color: #2DD1E1;
+    box-shadow: rgb(45, 209, 225) 0px 5px 15px;
+    border: 1px solid rgb(49, 49, 49);
+    cursor: pointer;
+
+}
+.submit:hover{
+    background:#2DD1E1;
+    color:  #222325;
+    border: 1px solid rgb(49, 49, 49);
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 76%;
+    }
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 82%;
+    }
+}
+
+@keyframes javascript {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes react {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 30%;
+    }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+
+    /* .right_content p{
+        color: red;
+        font-size: 44px;
+    } */
+    .space_between {
+        display: block;
+        flex-direction: column-reverse;
+    }
+
+    .center {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin: 50px auto;
+    }
+
+    .cards {
+        text-align: center;
+        align-items: center;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    .links {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .left_content img {
+        width: 250px;
+    }
+
+    .right_content {
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    .right_content p {
+        padding: 0;
+        font-size: 16px;
+        margin: 30px auto;
+        letter-spacing: 1px;
+
+    }
+
+    .right_content h1 {
+        font-size: 30px;
+        margin: 20px 0;
+    }
+
+    .right_content h2 {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .right_content .button {
+        margin: 0;
+    }
+
+    .cards {
+        max-width: 350px;
+    }
+
+    .cards p {
+        font-size: 12px;
+        color: gray;
+    }
+
+    .profiles_section {
+        position: relative;
+        display: flex;
+        /* display: block; */
+        /* flex-direction: column; */
+        border-radius: 40px;
+    }
+
+    .profiles_section i {
+        /* background: none; */
+        /* display: flex; */
+        flex-wrap: wrap;
+        width: 50px;
+        margin: 50px;
+        /* font-size: 50px; */
+
+    }
+}
